@@ -1,43 +1,4 @@
-import { Container, Grid, Box } from '@material-ui/core';
-import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
-
-// Material UI Breakpoints
-// xs, extra-small: 0px
-// sm, small: 600px
-// md, medium: 960px
-// lg, large: 1280px
-// xl, extra-large: 1920px
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    box: {
-      backgroundColor: 'white',
-      [theme.breakpoints.only('xs')]: {
-        width: 25,
-        height: 25,
-      },
-      [theme.breakpoints.only('sm')]: {
-        width: 50,
-        height: 50,
-      },
-      [theme.breakpoints.only('md')]: {
-        width: 75,
-        height: 75,
-      },
-      [theme.breakpoints.only('lg')]: {
-        width: 100,
-        height: 100,
-      },
-      [theme.breakpoints.only('xl')]: {
-        width: 150,
-        height: 150,
-      },
-    },
-  })
-);
-
 export default function Page() {
-  const classes = useStyles();
   return (
     <div>
       <div className="container mx-auto">
