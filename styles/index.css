@@ -16,3 +16,97 @@
 
 @layer components {
 }
+
+.vanilla-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-padding {
+  padding: 0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: white;
+  margin: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+
+@media (min-width: 640px) {
+  .vanilla-container {
+    max-width: 640px;
+  }
+  .container-padding {
+    padding: 1.25rem;
+  }
+  .box {
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .vanilla-container {
+    max-width: 768px;
+  }
+  .container-padding {
+    padding: 2.5rem;
+  }
+  .box {
+    margin: 1.25rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vanilla-container {
+    max-width: 1024px;
+  }
+  .container-padding {
+    padding: 3.5rem;
+  }
+  .box {
+    margin: 1.25rem;
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vanilla-container {
+    max-width: 1280px;
+  }
+  .container-padding {
+    padding: 5rem;
+  }
+  .box {
+    margin: 1.25rem;
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .vanilla-container {
+    max-width: 1536px;
+  }
+  .container-padding {
+    padding: 5rem;
+  }
+  .box {
+    margin: 1.25rem;
+    width: 18rem;
+    height: 18rem;
+  }
+}
